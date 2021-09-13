@@ -1,0 +1,33 @@
+.service {
+	padding: 64px 0 64px;
+	&-items{
+		.row-flex();
+	}
+
+	&-item {
+		.col();
+		.size(12);
+		.size-md(6);
+		.size-lg(4);
+		.size-xxl(3);
+		margin: 16px auto;
+		max-width: 288px;
+		border: 1px solid @color_border;
+		box-sizing: border-box;
+		border-radius: 6px;
+
+			.md-block({
+				align-items: center;
+    		max-width: 320px;
+			});
+	}
+
+	&-descr {
+		margin: 14px 0 18px 21px;
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		color: @color_text-black;
+	}
+}
